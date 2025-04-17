@@ -23,16 +23,17 @@
       style="max-width: 600px"
       placeholder="Please input"
       class="input-with-select"
+      size="large"
     >
       <template #prepend>
-        <el-select v-model="select" placeholder="Select" style="width: 115px">
+        <el-select v-model="select" placeholder="Select" style="width: 115px" size="large">
           <el-option label="Restaurant" value="1" />
           <el-option label="Order No." value="2" />
           <el-option label="Tel" value="3" />
         </el-select>
       </template>
       <template #append>
-        <el-button :icon="Search" />
+        <el-button :icon="Search" size="large"/>
       </template>
     </el-input>
   </div>
